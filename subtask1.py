@@ -1,7 +1,7 @@
 '''
-Task 1: Simulating John's normal morning routine: 
+Subtask 1: Simulating John's normal morning routine: 
 - Step 1: Eat a sandwich for 8 seconds (instead of 8 minutes for simplicity)
-- Step 2: Drink tea for 3 seconds (instead of 3 minutes for simplicity)
+- Step 2: Drink tea for 3 seconds (instead of 3 minutes)
 - Step 3: Eat fruits for 2 seconds (instead of 2 minutes)
 - Step 4: Scroll through social media for 10 seconds (instead of 10 minutes)
 - Step 5: Total morning routine should be: 8 + 3 + 2 + 10 = 23 seconds (instead of 23 minutes)

@@ -12,29 +12,30 @@ import time
 import threading
 
 def eat_sandwich():
-    print ("John takes a bite of his sandwich")
-    time.sleep(5) # Simulates the time taken to chew and swallow a bite
-    print ("John finishes the bite")
+    print ("First he takes a bite of his sandwich")
+    time.sleep(5) # Assuming the time it takes for John to chew and swallow a it is 5 seconds
+    print ("sandwich's swallowed")
 
 def drink_tea():
-    print ("John takes a sip of his tea")
+    print ("And takes a sip of his tea")
     time.sleep(2) # Time taken to sip tea
-    print ("John finishes the sip of tea")
+    print ("tea's sipped")
 
 def check_phone():
-    print ("John checks a notification on his phone")
+    print ("He also checks a notification on his phone")
     time.sleep(3) # Time taken to read and process a notification
-    print ("John finishes checking the notification")
+    print ("phone's checked")
 
 def eat_fruit():
-    print ("John takes a bite of his fruits")
+    print ("And even takes yet another bite of his fruits")
     time.sleep(3) # Time taken to eat a piece of fruit
-    print ("John finishes the bite")
+    print ("fruit's eaten")
 
 def breakfast_cycle():
     '''
     Executes one complete breakfast cycle where all activities happen concurrently.
     The cycle repeats 3 times to simulate a complete breakfast
+    (this is assuming John is a fast eater and multitasker and can complete his breakfast in 3 cycles)
     '''
     for i in range(3): 
         print(f"Cycle {i+1} starts:")
@@ -42,9 +43,9 @@ def breakfast_cycle():
         # Create threads for all concurrent activities 
         threads = [
             threading.Thread(target=eat_sandwich),
-            threading.Thread(target=eat_fruit),
             threading.Thread(target=drink_tea),
-            threading.Thread(target=check_phone)
+            threading.Thread(target=check_phone),
+            threading.Thread(target=eat_fruit)
         ]
 
         # Start all threads concurrently
@@ -62,7 +63,7 @@ def breakfast_routine():
     print("John finishes his breakfast")
 
 if __name__ == "__main__":
-    print("John's breakfast cycle:")
+    print("John's breakfast cycles (this time he's multitasking):")
     start_time = time.time()
     breakfast_routine()
     end_time = time.time()

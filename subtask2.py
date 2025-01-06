@@ -1,8 +1,8 @@
 '''
-Task 2: Simulating John's new morning routine: 
+Subtask 2: Simulating John's new morning routine: 
 - Step 1: Eat a sandwich for 8 seconds (instead of 8 minutes)
 - Step 2: Drink tea for 6 seconds (instead of 6 minutes)
-          (Tea drinking normally takes 3 minutes but is now extended to 6 minutes
+          (Tea drinking in first task takes 3 minutes but is now extended to 6 minutes
           because John takes longer sips while multitasking with his phone)
 - Step 3: Eat fruits for 2 seconds (instead of 2 minutes)
 - Step 4: Scroll through social media for 7 seconds (instead of 7 minutes)
@@ -50,7 +50,7 @@ def eat_fruit():
     print ("- Fruits eaten")
 
 def social_media():
-    print ("4. John only needs to check his phone for 7 seconds")
+    print ("4. John now only checks his phone for 7 seconds")
     time.sleep(7) # Reduced duration as some phone time was used during tea
     print ("- Checked phone")
 
